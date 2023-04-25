@@ -23,7 +23,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         scanner.nextLine();
 
-        // New Comment
+        // Переменные в java
 
         String name = "0125";
         int age = 31;
