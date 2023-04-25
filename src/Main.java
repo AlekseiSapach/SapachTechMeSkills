@@ -15,7 +15,7 @@ public class Main {
         System.out.println("Let's calculate sum of 5 + 10: " + (5 + 10));
         System.out.println("Алексей" + " " + "Сапач" +
                 ". Welcome to my First " +
-                "Lesson to...........");
+                "Lesson to...");
 
         // This is an example comment for Git
         System.out.println();
