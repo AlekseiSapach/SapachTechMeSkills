@@ -6,5 +6,13 @@ public class Main {
         System.out.println("  *****  ");
         System.out.println(" ******* ");
         System.out.println("*********");
+        System.out.println();
+        //Вывод поля для игры "Кристики-нолики"
+        System.out.println("    |    |    ");
+        System.out.println("____|____|____");
+        System.out.println("    |    |    ");
+        System.out.println("____|____|____");
+        System.out.println("    |    |    ");
+        System.out.println("    |    |    ");
     }
 }
