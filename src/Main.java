@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args)
     {
-        getPersonData();
+        getBodyMassIndex();
     }
     public static void getPersonData()
     {
@@ -21,5 +21,22 @@ public class Main {
         System.out.println("Имя и Фамилия: " + name + " " + surname);
         System.out.println("Возраст: "+ age);
         System.out.println("Рост "+height + " см" +", Вес: "+weight + " кг");
+    }
+    public static void characterInput()
+    {
+        Scanner enter = new Scanner(System.in);
+        System.out.print("Введите символ: ");
+        String character = enter.nextLine();
+        //System.out.println(character + " - " + (int) character);
+    }
+    public static void getBodyMassIndex()
+    {
+        Scanner enter = new Scanner(System.in);
+        System.out.print("Введите вес в кг: ");
+        float weight = enter.nextFloat();
+        System.out.print("Введите рост в метрах: ");
+        float height = enter.nextFloat();
+        float bmi = weight/(height*height);
+        System.out.println("BMI = " + bmi + " кг/м^2");
     }
 }
