@@ -3,7 +3,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args)
     {
-        getBodyMassIndex();
+        //getPersonData()
+        characterInput();
+        //getBodyMassIndex();
     }
     public static void getPersonData()
     {
@@ -27,7 +29,13 @@ public class Main {
         Scanner enter = new Scanner(System.in);
         System.out.print("Введите символ: ");
         String character = enter.nextLine();
-        //System.out.println(character + " - " + (int) character);
+        char myChar = character.charAt(0);
+        /*
+        так как к строке нельзя применить преобразование типа, а с типом данных char метод scanner
+        не работает, пришлось гуглить, как из строки достать нужный символ
+        метод charAt() подсмотрел здесь https://javarush.com/groups/posts/2873-charat-v-java
+        */
+        System.out.println(myChar + " - " + (int) myChar);
     }
     public static void getBodyMassIndex()
     {
