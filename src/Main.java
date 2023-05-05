@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args)
     {
-        //getPersonData()
-        characterInput();
+        getPersonData()
+        //characterInput();
         //getBodyMassIndex();
     }
     public static void getPersonData()
