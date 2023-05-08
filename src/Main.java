@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args)
     {
-        getPersonData();
+        //getPersonData();
         //characterInput();
-        //getBodyMassIndex();
+        getBodyMassIndex();
     }
     public static void getPersonData()
     {
@@ -15,11 +15,11 @@ public class Main {
         System.out.print("Введите Фамилию: ");
         String surname = enter.nextLine();
         System.out.print("Введите Возраст: ");
-        String age = enter.nextLine();
+        int age = enter.nextInt();
         System.out.print("Введите Рост  в см: ");
-        String height = enter.nextLine();
+        int height = enter.nextInt();
         System.out.print("Введите Вес в кг: ");
-        String weight = enter.nextLine();
+        float weight = enter.nextFloat();
         System.out.println("Имя и Фамилия: " + name + " " + surname);
         System.out.println("Возраст: "+ age);
         System.out.println("Рост "+height + " см" +", Вес: "+weight + " кг");
@@ -44,9 +44,11 @@ public class Main {
         Scanner enter = new Scanner(System.in);
         System.out.print("Введите вес в кг: ");
         float weight = enter.nextFloat();
-        System.out.print("Введите рост в метрах: ");
-        float height = enter.nextFloat();
-        float bmi = weight/(height*height);
+        System.out.print("Введите рост в см: ");
+        int height = enter.nextInt();
+        float myHeight = (float) height/100;
+        System.out.println(myHeight);
+        float bmi = weight/(myHeight*myHeight);
         System.out.println("BMI = " + bmi + " кг/м^2");
         enter.close();
     }
