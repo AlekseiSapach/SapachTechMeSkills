@@ -126,8 +126,9 @@ public class Main {
         } else if (myTemp <= -20)
         {
             System.out.println("Холодно");
-
         }
+
+
     }
     public static void getRainbowColor()
     {
