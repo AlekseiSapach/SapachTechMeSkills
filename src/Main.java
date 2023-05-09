@@ -9,7 +9,15 @@ public class Main {
         //getRainbowColor();
 
     }
-    public static void getSwitchCase() {
+    public static int getNumber()
+    {
+        System.out.print("Enter number: ");
+        Scanner enter = new Scanner(System.in);
+        int myNumber = enter.nextInt();
+        return myNumber;
+    }
+    public static void getSwitchCase()
+    {
         /*
         Вывод названия поры года по номеру месяца,
         через оператор Switch-case
@@ -85,11 +93,10 @@ public class Main {
 
     public static void getEvenNumber() {
         //определение четности числа
-        System.out.print("Enter number: ");
-        Scanner enter = new Scanner(System.in);
-        int myNumber = enter.nextInt();
 
-        if (myNumber % 2 == 0) {
+        int myNum = getNumber();
+
+        if (myNum % 2 == 0) {
             System.out.println("Чётное число");
         } else {
             System.out.println("Нечётное число");
