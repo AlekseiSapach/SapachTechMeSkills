@@ -2,44 +2,22 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        getSwitchCase();
+        //getSwitchCase();
         //getIfElse();
         //getEvenNumber();
         //getTemperature();
-        //getRainbowColor();
+        getRainbowColor();
 
     }
-
-    public static int getMonth() {
-        System.out.print("Enter month number: ");
-        Scanner enter = new Scanner(System.in);
-        int mount = enter.nextInt();
-        return mount;
-
-    }
-
-    public static int getNumber() {
-        System.out.print("Enter number: ");
-        Scanner enter = new Scanner(System.in);
-        int number = enter.nextInt();
-        return number;
-
-    }
-
-    public static int getTemp() {
-        System.out.print("Enter air temperature: ");
-        Scanner enter = new Scanner(System.in);
-        int temp = enter.nextInt();
-        return temp;
-
-    }
-
-    public static void getSwitchCase() {
+        public static void getSwitchCase() {
         /*
         Вывод названия поры года по номеру месяца,
         через оператор Switch-case
          */
-        int myMount = getMonth();
+        System.out.print("Enter month number: ");
+        Scanner enter = new Scanner(System.in);
+        int myMount = enter.nextInt();
+
         switch (myMount) {
             case 1:
                 System.out.println("Winter");
@@ -85,7 +63,9 @@ public class Main {
         Вывод названия поры года по номеру месяца,
         через оператор If-Else if
          */
-        int myMount1 = getMonth();
+        System.out.print("Enter month number: ");
+        Scanner enter = new Scanner(System.in);
+        int myMount1 = enter.nextInt();
 
         if (myMount1 < 1 || myMount1 > 12) {
             System.out.println("You have entered some crap!");
@@ -105,7 +85,10 @@ public class Main {
 
     public static void getEvenNumber() {
         //определение четности числа
-        int myNumber = getNumber();
+        System.out.print("Enter number: ");
+        Scanner enter = new Scanner(System.in);
+        int myNumber = enter.nextInt();
+
         if (myNumber % 2 == 0) {
             System.out.println("Чётное число");
         } else {
@@ -115,7 +98,9 @@ public class Main {
 
     public static void getTemperature() {
         //температура на улице
-        int myTemp = getTemp();
+        System.out.print("Enter air temperature: ");
+        Scanner enter = new Scanner(System.in);
+        int myTemp = enter.nextInt();
 
         if (myTemp > -5)
         {
@@ -133,7 +118,9 @@ public class Main {
     public static void getRainbowColor()
     {
         // определение цвета радуги
-        int myColor = getNumber();
+        System.out.print("Enter rainbow color number: ");
+        Scanner enter = new Scanner(System.in);
+        int myColor = enter.nextInt();
 
         if (myColor < 1 || myColor > 7) {
             System.out.println("You have entered some crap!");
@@ -162,6 +149,7 @@ public class Main {
                 System.out.println("Violet");
                 break;
         }
+        enter.close();
 
     }
 }
