@@ -23,7 +23,7 @@ public class Main {
         System.out.println("Имя и Фамилия: " + name + " " + surname);
         System.out.println("Возраст: "+ age);
         System.out.println("Рост "+height + " см" +", Вес: "+weight + " кг");
-        enter.close();
+        
     }
     public static void characterInput()
     {
@@ -37,7 +37,7 @@ public class Main {
         метод charAt() подсмотрел здесь https://javarush.com/groups/posts/2873-charat-v-java
         */
         System.out.println(myChar + " - " + (int) myChar);
-        enter.close();
+        
     }
     public static void getBodyMassIndex()
     {
