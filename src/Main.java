@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //getSwitchCase();
+        getSwitchCase();
         //getIfElse();
         //getEvenNumber();
         //getTemperature();
-        getRainbowColor();
+        //getRainbowColor();
 
     }
     public static void getSwitchCase() {
