@@ -2,11 +2,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        getSwitchCase();
+        //getSwitchCase();
         //getIfElse();
         //getEvenNumber();
         //getTemperature();
         //getRainbowColor();
+        //getOddNumbers();
+        //getReverseOrder();
+        //getSum();
+        //getSubsequence();
+        //getSubsequence1();
+        getSquareNumber();
+
 
     }
     public static int getNumber()
@@ -156,7 +163,73 @@ public class Main {
                 System.out.println("Violet");
                 break;
         }
-        enter.close();
 
+    }
+    public static void getOddNumbers()
+    {
+        //вывод нечётных чисел
+        for (int myNum=1; myNum<=99; myNum++)
+        {
+            if (myNum%2==1)
+                System.out.println(myNum);
+        }
+    }
+    public static void getReverseOrder()
+    {
+       //вывод чисел в обратном порядке
+       int myNumb = 5;
+       while (myNumb>=1)
+       {
+           System.out.println(myNumb--);
+       }
+    }
+    public static void getSum()
+    {
+        //сумма всех чисел до введенного числа пользователя
+        System.out.print("Enter a positive number: ");
+        Scanner enter = new Scanner(System.in);
+        int myNumber = enter.nextInt();
+        int sum=0;
+        for (int numb=1; numb<=myNumber;numb++)
+        {
+            sum=sum+numb;
+        }
+        System.out.println("Сумма чисел = "+sum);
+    }
+    public static void getSubsequence()
+    {
+        // вывод последовательности чисел
+        int numb = 7;
+        int myInt = 1;
+        int sum =0;
+
+        while (myInt<=14)
+        {
+            sum=numb*myInt;
+            System.out.print(sum+" ");
+            myInt++;
+        }
+    }
+    public static void getSubsequence1()
+    {
+        // вывод последовательности чисел
+        int myInt = 1;
+        int sum =0;
+
+        while (myInt<=10)
+        {
+
+            System.out.print(sum+" ");
+            sum=sum-5;
+            myInt++;
+        }
+    }
+    public static void getSquareNumber()
+    {
+        //вывод квадратов чисел от 10 до 20
+        for (int numb=10; numb<=20; numb++)
+        {
+            System.out.println("Квадрат числа "+ numb + " = "+numb*numb);
+        }
     }
 }
