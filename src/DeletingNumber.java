@@ -24,7 +24,10 @@ public class DeletingNumber {
                 myArray[index-count]=myArray[index];
         }
         if (count==0)
+        {
             System.out.println("There is no such number in the array");
+            return;
+        }
         for (int index =0; index<myArray1.length;index++)
             myArray1[index]=myArray[index];
         for (int index =0; index<myArray1.length-count;index++)
