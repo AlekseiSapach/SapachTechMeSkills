@@ -8,6 +8,7 @@ public class Main {
     }
     public static void getNumberSearch()
     {
+        //Входит ли введенное число в массив или нет
         System.out.print("Enter an integer: ");
         Scanner enter=new Scanner(System.in);
         int myNumb = enter.nextInt();
