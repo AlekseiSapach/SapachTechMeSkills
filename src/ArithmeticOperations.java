@@ -1,14 +1,16 @@
 import java.util.Scanner;
 
-public class DeletingNumber {
+public class ArithmeticOperations {
+
+
     public static void main(String[] args)
     {
-        getDeleting();
+        getOperations();
 
     }
-    public static void getDeleting()
+    public static void getOperations()
     {
-        //Удаление числа из массива (задание 1)
+        //Нахождение мин, макс и среднего значения (задание 2)
         System.out.print("Enter an integer: ");
         Scanner enter=new Scanner(System.in);
         int myNumb = enter.nextInt();
@@ -29,6 +31,9 @@ public class DeletingNumber {
             myArray1[index]=myArray[index];
         for (int index =0; index<myArray1.length-count;index++)
             System.out.print(myArray1[index]+" ");
-        enter.close();
+
+
+
+
     }
 }
