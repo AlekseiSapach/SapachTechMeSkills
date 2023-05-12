@@ -8,7 +8,7 @@ public class Main {
     }
     public static void getNumberSearch()
     {
-        //Входит ли введенное число в массив или нет
+        //Входит ли введенное число в массив или нет (Задание 0)
         System.out.print("Enter an integer: ");
         Scanner enter=new Scanner(System.in);
         int myNumb = enter.nextInt();
@@ -26,5 +26,7 @@ public class Main {
             System.out.println("Enter a number not in the array");
 
 
+         enter.close();
     }
+
 }
