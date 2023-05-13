@@ -21,7 +21,5 @@ public class AdditionalTask6 {
             System.out.print(myArray[index]+" ");
         System.out.println();
 
-
-
     }
 }
