@@ -22,7 +22,7 @@ public class AdditionalTask7 {
             System.out.print(myArray[index]+" ");
         System.out.println();
         for (int index=0; index<myArray.length; index++)
-            for (int jIndex=0; jIndex<myArray.length-1-index; jIndex++)
+            for (int jIndex=0; jIndex<myArray.length-1; jIndex++)
                 if (myArray[jIndex]>myArray[jIndex+1])
                 {
                     count=myArray[jIndex];
