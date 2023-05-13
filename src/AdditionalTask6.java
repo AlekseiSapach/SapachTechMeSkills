@@ -19,7 +19,6 @@ public class AdditionalTask6 {
             Arrays.sort(myArray);
         for (int index=0; index<myArray.length; index++)
             System.out.print(myArray[index]+" ");
-        System.out.println();
 
     }
 }
