@@ -33,7 +33,7 @@ public class ArithmeticOperations {
             mySum+=myArray2[index];
         double myAverage=mySum/myNumb;
         System.out.println("Среднее арифметическое всех элементов массива: "+myAverage);
-
+    enter.close();
 
 
     }
