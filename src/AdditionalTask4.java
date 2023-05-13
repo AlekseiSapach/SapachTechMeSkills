@@ -13,7 +13,7 @@ public class AdditionalTask4 {
         Scanner enter=new Scanner(System.in);
         int myNumb = enter.nextInt();
         int count=0;
-        if (myNumb<5 || myNumb>10)
+        while (myNumb<5 || myNumb>10)
         {
             System.out.println("Array size must not be less than 5 and greater than 10");
             System.out.print("Enter array size from 5 to 10: ");
