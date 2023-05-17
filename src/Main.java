@@ -7,6 +7,7 @@ public class Main {
     }
     public static void getElementIncrease()
     {
+        //Увеличение элемента массива на введенное число
         System.out.print("Enter an integer: ");
         Scanner enter = new Scanner(System.in);
         int counter = enter.nextInt();
@@ -17,6 +18,7 @@ public class Main {
                         {7,8,9}
                 }
         };
+
         for (int outerDimension = 0; outerDimension < myArray.length; outerDimension++)
         {
             for (int innerDimension = 0; innerDimension < myArray[outerDimension].length; innerDimension++)
