@@ -3,7 +3,7 @@ package FirstTask;
 import java.util.Scanner;
 
 public class CreditCard {
-    private String AccountNumber;
+    private String AccountNumber = "0000 0000 0000 0000";
     private int CurrentAmount;
     private int Summa;
 
