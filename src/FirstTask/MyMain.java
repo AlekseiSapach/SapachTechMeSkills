@@ -1,4 +1,7 @@
-public class Main {
+package FirstTask;
+
+public class MyMain {
+
     public static void main(String[] args)
     {
 
