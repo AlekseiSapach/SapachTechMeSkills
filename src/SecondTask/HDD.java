@@ -17,4 +17,14 @@ public class HDD {
         memoryHDD=memory;
         typeHDD=type;
     }
+
+    boolean getInfoHDD()
+    {
+        System.out.println("Name HDD: "+nameHDD);
+        System.out.println("Memory HDD: "+memoryHDD);
+        System.out.println("Type HDD"+typeHDD);
+
+
+        return true;
+    }
 }
