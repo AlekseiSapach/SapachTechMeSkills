@@ -3,9 +3,21 @@ package FirstTask;
 import java.util.Scanner;
 
 public class CreditCard {
-    double AccountNumber;
-    double CurrentAmount;
-    double Summa;
+    private String AccountNumber;
+    private int CurrentAmount;
+    private int Summa;
+
+    public void setAccountNumber(String accountNumber) {
+        AccountNumber = accountNumber;
+    }
+
+    public void setCurrentAmount(int currentAmount) {
+        CurrentAmount = currentAmount;
+    }
+
+    public void setSumma(int summa) {
+        Summa = summa;
+    }
 
     void getCardInfo()
     {
@@ -14,15 +26,12 @@ public class CreditCard {
     }
     void cashWithdrawal()
     {
-        Scanner enter = new Scanner(System.in);
-        Summa= enter.nextDouble();
-        CurrentAmount=CurrentAmount-Summa;
-
+        System.out.println("Withdrawal from a credit card: "+ Summa);
+        System.out.println("Current card balance: " + (CurrentAmount-Summa));
     }
     void getRefill()
     {
-        Scanner enter = new Scanner(System.in);
-        Summa= enter.nextDouble();
-        CurrentAmount=CurrentAmount+Summa;
+        System.out.println("Crediting funds to the card: "+ Summa);
+        System.out.println("Current card balance: " + (CurrentAmount+Summa));
     }
 }
