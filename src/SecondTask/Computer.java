@@ -7,14 +7,6 @@ public class Computer {
     private RAM ram;
     private HDD hdd;
 
-
-    public Computer(String computerPrice, String computerType, RAM ram1, HDD hdd1)
-    {
-        price=computerPrice;
-        type=computerType;
-        //this.ram=ram1.getNameRAM();
-        //this.hdd=;
-    }
     public Computer()
     {
         price ="Unknown";
@@ -22,15 +14,21 @@ public class Computer {
         ram = new RAM();
         hdd = new HDD();
     }
+    RAM ram1 = new RAM();
+    HDD hdd1 = new HDD();
 
-
+    public Computer(String computerPrice, String computerType)
+    {
+        price=computerPrice;
+        type=computerType;
+    }
 
     void getInfoComputer()
     {
         System.out.println("Computer cost: "+price);
         System.out.println("Computer model: "+type);
-        System.out.println(hdd.getInfoHDD());
-        System.out.println (ram.getInfoRAM());
+        ram1.getInfoRAM();
+        hdd1.getInfoHDD();
 
     }
 }

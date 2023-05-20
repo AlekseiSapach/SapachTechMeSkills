@@ -7,6 +7,9 @@ public class MyMain {
         Computer comp1 = new Computer();
         comp1.getInfoComputer();
 
-  //      Computer comp2 = new Computer("2000$","HP","DDR4",10000);
+        System.out.println();
+
+        Computer comp2 = new Computer("2000$","HP");
+        comp2.getInfoComputer();
     }
 }
