@@ -10,6 +10,7 @@ public class ATM
     private int counter;
     private int summa;
     private boolean count;
+    private int check;
 
     public ATM(int bank20,int bank50,int bank100)
     {
@@ -49,17 +50,56 @@ public class ATM
 
     void getCashWithdrawal()
     {
-        summa=banknote20*20+banknote50*50+banknote100*100;
+        int b20=20;
+        int b50=50;
+        int b100=100;
+        summa=banknote20*b20+banknote50*b50+banknote100*b100;
         System.out.print("Какую сумму Вы хотите снять: ");
         counter= input().nextInt();
-        if (summa >= counter)
+        if (summa <= counter || counter % 10 != 0 || counter == 0)
         {
-            count=true;
-            System.out.println(true +" Успешно");
+            System.out.println(count +" Введенная сумма больше суммы денег в банкомате");
+
         }
         else
         {
-            System.out.println(count +" Введенная сумма больше суммы денег в банкомате");
+            count=true;
+            System.out.println(true +" Успешно");
+            while (counter > 0 && banknote100 > 0)
+            {
+                counter -= b100;
+                banknote100--;
+                check++;
+            }
+            if (counter < 0)
+            {
+                counter += b100;
+                banknote100++;
+                check--;
+                System.out.println("Количество банкнот наминалом 100: "+check);
+            }
+            check=0;
+            while (counter > 0 && banknote50 > 0)
+            {
+                counter -= b50;
+                banknote50--;
+                check++;
+            }
+            if (counter < 0)
+            {
+                counter += b50;
+                banknote50++;
+                check--;
+                System.out.println("Количество банкнот наминалом 50: "+check);
+            }
+            check=0;
+            while (counter > 0 && banknote20 > 0)
+            {
+                counter -= b20;
+                banknote20--;
+                check++;
+                System.out.println("Количество банкнот наминалом 20: "+check);
+            }
         }
     }
 }
