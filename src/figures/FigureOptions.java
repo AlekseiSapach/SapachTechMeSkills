@@ -41,4 +41,16 @@ public class FigureOptions {
     public int getHeight() {
         return height;
     }
+
+    public int getLength() {
+        return length;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getRadius() {
+        return radius;
+    }
 }
