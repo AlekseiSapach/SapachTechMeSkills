@@ -38,5 +38,7 @@ public class FigureOptions {
         return sideC;
     }
 
-
+    public int getHeight() {
+        return height;
+    }
 }
