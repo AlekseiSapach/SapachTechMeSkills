@@ -9,7 +9,6 @@ public class FigureOptions {
     private int sideB;
     private int sideC;
 
-
     public FigureOptions(int width,int length)
     {
         this.width=width;
@@ -26,5 +25,18 @@ public class FigureOptions {
     {
         this.radius=radius;
     }
+
+    public int getSideA() {
+        return sideA;
+    }
+
+    public int getSideB() {
+        return sideB;
+    }
+
+    public int getSideC() {
+        return sideC;
+    }
+
 
 }
