@@ -5,13 +5,15 @@ public class Circle extends FigureOptions {
         super(radius);
     }
 
-    void getCirclePerimeter() {
-        double perimeter = 2*3.14*getRadius();
-        System.out.println(perimeter);
+    @Override
+    public double getPerimeter() {
+        double perimeter = 2*Math.PI*getRadius();
+        return perimeter;
     }
 
-    void getCircleArea() {
-        double area = 3.14*(getRadius()*getRadius());
-        System.out.println(area);
+    @Override
+    public double getArea() {
+        double area = Math.PI*(getRadius()*getRadius());
+        return area;
     }
 }

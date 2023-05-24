@@ -5,13 +5,17 @@ public class Triangle extends FigureOptions {
         super(height, sideA, sideB, sideC);
     }
 
-    void getTrianglePerimeter(){
-        int perimeter = getSideA() + getSideB() + getSideC();
-        System.out.println(perimeter);
+    @Override
+    public double getPerimeter()
+    {
+        double perimeter = getSideA() + getSideB() + getSideC();
+        return perimeter;
     }
-    void getTriangleArea(){
+    @Override
+    public double getArea()
+    {
         double area = (double) (getHeight() + getSideC()) / 2;
-        System.out.println(area);
+        return area;
     }
 
 

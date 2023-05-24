@@ -5,12 +5,16 @@ public class Rectangle extends FigureOptions {
         super(width, length);
     }
 
-    void getRectanglePerimeter(){
-        int perimeter = 2*(getWidth()+getLength());
-        System.out.println(perimeter);
+    @Override
+    public double getPerimeter()
+    {
+        double perimeter = 2*(getWidth()+getLength());
+        return perimeter;
     }
-    void getRectangleArea(){
+    @Override
+    public double getArea()
+    {
         int area =getLength()*getWidth() ;
-        System.out.println(area);
+        return area;
     }
 }

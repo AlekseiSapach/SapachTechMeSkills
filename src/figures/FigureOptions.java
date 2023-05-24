@@ -1,6 +1,6 @@
 package figures;
 
-public class FigureOptions {
+public abstract class FigureOptions  {
     private int width;
     private int length;
     private int height;
@@ -53,4 +53,19 @@ public class FigureOptions {
     public int getRadius() {
         return radius;
     }
+    void getData()
+    {
+        System.out.println("width = "+this.width);
+        System.out.println("length = "+this.length);
+        System.out.println("height = "+this.height);
+        System.out.println("radius = "+this.radius);
+        System.out.println("sideA = "+this.sideA);
+        System.out.println("sideB = "+this.sideB);
+        System.out.println("sideC = "+this.sideC);
+    }
+
+
+
+    public abstract double getArea();
+    public abstract double getPerimeter();
 }
