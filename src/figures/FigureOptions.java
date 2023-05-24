@@ -9,7 +9,8 @@ public abstract class FigureOptions  {
     private int sideB;
     private int sideC;
 
-    public FigureOptions(int width,int length)
+
+    public FigureOptions(int width, int length)
     {
         this.width=width;
         this.length=length;

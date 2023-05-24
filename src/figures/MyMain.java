@@ -1,9 +1,7 @@
 package figures;
-
 public class MyMain {
     public static void main(String[] args) {
         double summa=0;
-
         FigureOptions[] figure=
         {
             new Triangle(5,10,10,10),
@@ -14,24 +12,9 @@ public class MyMain {
         };
         for (FigureOptions figureOptions:figure)
         {
-            figureOptions.getData();
-            //System.out.println(figureOptions.getPerimeter());
-            System.out.println();
+            summa=summa+figureOptions.getPerimeter();
         }
-        for (int index=0;index< figure.length;index++)
-        {
-            figure[0].getPerimeter();
-            figure[1].getPerimeter();
-            figure[2].getPerimeter();
-            figure[3].getPerimeter();
-            figure[4].getPerimeter();
-
-        }
-
-
-
-
-
+        System.out.println("Сумму периметра всех фигур в массиве: "+summa);
 
     }
 }
