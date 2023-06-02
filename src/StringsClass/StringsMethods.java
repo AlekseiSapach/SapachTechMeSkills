@@ -7,17 +7,17 @@ public class StringsMethods {
     {
         getOutput(input().nextLine());
         System.out.println();
-        characterReplacement(input().nextLine());
+        //characterReplacement(input().nextLine());
         System.out.println();
-        letterOutput(input().nextLine());
+        //letterOutput(input().nextLine());
         System.out.println();
-        getUppercase(input().nextLine());
+        //getUppercase(input().nextLine());
         System.out.println();
-        entryCheckABC(input().nextLine());
+        //entryCheckABC(input().nextLine());
         System.out.println();
-        entryCheck555(input().nextLine());
+        //entryCheck555(input().nextLine());
         System.out.println();
-        entryCheck1a2b(input().nextLine());
+        //entryCheck1a2b(input().nextLine());
 
     }
 
@@ -29,9 +29,10 @@ public class StringsMethods {
     }
     public static void getOutput(String numberDoc)
     {
-
-
-
+        StringBuilder stringBuilder = new StringBuilder(numberDoc);
+        stringBuilder.delete(4,8);
+        stringBuilder.delete(9,18);
+        System.out.println(stringBuilder);
     }
     public static void characterReplacement(String numberDoc)
     {
