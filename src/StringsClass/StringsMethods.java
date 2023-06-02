@@ -68,14 +68,19 @@ public class StringsMethods {
     }
     public static void entryCheckABC(String numberDoc)
     {
-
+        String str = new String(numberDoc);
+        String str1 = "abc";
+        System.out.println(str.toLowerCase().contains(str1.toLowerCase()));
     }
     public static void entryCheck555(String numberDoc)
     {
+        String str = new String(numberDoc);
+        System.out.println(str.startsWith("555"));
 
     }
     public static void entryCheck1a2b(String numberDoc)
     {
-
+        String str = new String(numberDoc);
+        System.out.println(str.endsWith("1a2b"));
     }
 }
