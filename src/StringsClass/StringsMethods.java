@@ -5,19 +5,19 @@ import java.util.Scanner;
 public class StringsMethods {
     public static void main(String[] args)
     {
-        //getOutput(input().nextLine());
-        //System.out.println();
-        //characterReplacement(input().nextLine());
-        //System.out.println();
-        //letterOutput(input().nextLine());
-        //System.out.println();
-        //getUppercase(input().nextLine());
-        //System.out.println();
+        getOutput(input().nextLine());
+        System.out.println();
+        characterReplacement(input().nextLine());
+        System.out.println();
+        letterOutput(input().nextLine());
+        System.out.println();
+        getUppercase(input().nextLine());
+        System.out.println();
         entryCheckABC(input().nextLine());
-        //System.out.println();
-        //entryCheck555(input().nextLine());
-        //System.out.println();
-        //entryCheck1a2b(input().nextLine());
+        System.out.println();
+        entryCheck555(input().nextLine());
+        System.out.println();
+        entryCheck1a2b(input().nextLine());
 
     }
 
@@ -38,7 +38,7 @@ public class StringsMethods {
     {
         StringBuilder stringBuilder = new StringBuilder(numberDoc);
         stringBuilder.replace(5,8,"***");
-        stringBuilder.replace(14,18,"***");
+        stringBuilder.replace(14,17,"***");
         System.out.println(stringBuilder);
     }
     public static void letterOutput(String numberDoc)
