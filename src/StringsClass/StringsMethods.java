@@ -9,14 +9,14 @@ public class StringsMethods {
         //System.out.println();
         //characterReplacement(input().nextLine());
         //System.out.println();
-        letterOutput(input().nextLine());
-        System.out.println();
+        //letterOutput(input().nextLine());
+        //System.out.println();
         //getUppercase(input().nextLine());
-        System.out.println();
-        //entryCheckABC(input().nextLine());
-        System.out.println();
+        //System.out.println();
+        entryCheckABC(input().nextLine());
+        //System.out.println();
         //entryCheck555(input().nextLine());
-        System.out.println();
+        //System.out.println();
         //entryCheck1a2b(input().nextLine());
 
     }
@@ -43,7 +43,8 @@ public class StringsMethods {
     }
     public static void letterOutput(String numberDoc)
     {
-        StringBuilder stringBuilder = new StringBuilder(numberDoc);
+        String lowerRegisterValue = numberDoc.toLowerCase();
+        StringBuilder stringBuilder = new StringBuilder(lowerRegisterValue);
         stringBuilder.delete(0,5);
         stringBuilder.delete(3,8);
         stringBuilder.deleteCharAt(7);
@@ -54,7 +55,16 @@ public class StringsMethods {
     }
     public static void getUppercase(String numberDoc)
     {
-
+        String upperRegisterValue = numberDoc.toUpperCase();
+        StringBuilder stringBuilder = new StringBuilder(upperRegisterValue);
+        stringBuilder.delete(0,5);
+        stringBuilder.delete(3,8);
+        stringBuilder.deleteCharAt(7);
+        stringBuilder.setCharAt(3,'/');
+        stringBuilder.setCharAt(7,'/');
+        stringBuilder.setCharAt(9,'/');
+        stringBuilder.insert(0,"Letters:");
+        System.out.println(stringBuilder);
     }
     public static void entryCheckABC(String numberDoc)
     {
