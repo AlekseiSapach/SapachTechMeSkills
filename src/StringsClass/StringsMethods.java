@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class StringsMethods {
     public static void main(String[] args)
     {
-        getOutput(input().nextLine());
-        System.out.println();
+        //getOutput(input().nextLine());
+        //System.out.println();
         //characterReplacement(input().nextLine());
-        System.out.println();
-        //letterOutput(input().nextLine());
+        //System.out.println();
+        letterOutput(input().nextLine());
         System.out.println();
         //getUppercase(input().nextLine());
         System.out.println();
@@ -36,11 +36,21 @@ public class StringsMethods {
     }
     public static void characterReplacement(String numberDoc)
     {
-
+        StringBuilder stringBuilder = new StringBuilder(numberDoc);
+        stringBuilder.replace(5,8,"***");
+        stringBuilder.replace(14,18,"***");
+        System.out.println(stringBuilder);
     }
     public static void letterOutput(String numberDoc)
     {
-
+        StringBuilder stringBuilder = new StringBuilder(numberDoc);
+        stringBuilder.delete(0,5);
+        stringBuilder.delete(3,8);
+        stringBuilder.deleteCharAt(7);
+        stringBuilder.setCharAt(3,'/');
+        stringBuilder.setCharAt(7,'/');
+        stringBuilder.setCharAt(9,'/');
+        System.out.println(stringBuilder);
     }
     public static void getUppercase(String numberDoc)
     {
